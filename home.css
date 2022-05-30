@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+#fullpage{
+    position: relative;
+}
+#container{
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 695px;
+}
+#nav-bar{
+    /* position: relative;
+    text-align: left; */
+    display: flex;
+    color: rgb(247, 243, 238);
+}
+.nav-bar1{
+    width: 40%;
+}
+.nav-bar2{
+    width: 30%;
+}
+.nav-bar3{
+    width: 30%;
+}
+.header{
+    cursor: pointer;
+    width: 60%;
+   margin-left: 20px;
+   font-size: 25px;
+   font-weight: 600;
+   margin: 20px;
+}
+.menu-bar{
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    width: 40%;
+    margin: 20px;
+    position: relative;
+}
+#overView{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    width: 250px;
+    height: 350px;
+}
+.destination{
+    color: rgb(236, 112, 67);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+.planets_name{
+
+    color: rgb(80, 238, 238);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px;
+}
+.introduce{
+    color: aliceblue;
+    font-size: 17px;
+    margin: 15px 0px;
+    text-indent: 10px;
+    height: 150px;
+}
+.readmore{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+    background-color:none;
+}
+.readmore1{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.arrow{
+    position: absolute;
+    top: 300px;
+}
+.arrow-left{
+    cursor: pointer;
+}
+.arrow-right{
+    cursor: pointer;
+    position: absolute;
+    left: 1490px;
+}
+.menu-system{
+    width: 135px;
+    height: 200px;
+    background-color: none;
+    list-style-type: none;
+}
+.systemlist{
+    position: relative;
+    left: 15px;
+    color: rgb(8, 8, 8);
+    background-color: white;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 400;
+   
+}
+.systemSelect{
+    height: 30px;
+    margin: 10px 0px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.menu-planets{
+    width: 135px;
+    height: 300px;
+    background-color: none;
+    list-style-type: none;
+}
+.planetslist{
+    position: relative;
+    left: 15px ;
+    color: rgb(8, 8, 8);
+    background-color: white;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 400;
+   
+}
+#planetsSelect{
+    height: 30px;
+    margin: 10px 0px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.menu-moon{
+    position: relative;
+    left: 15px ;
+    width: 135px;
+    height: 300px;
+    background-color: none;
+    list-style-type: none;
+}
+.moonlist{
+    color: rgb(8, 8, 8);
+    background-color: white;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+   
+}
+.moonSelect{
+    height: 30px;
+    margin: 10px 0px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#chosepage{
+    position: absolute;
+    left: 700px;
+    top: 630px;
+}
+/* hidepag */
+#hidepage{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 695px;
+    background-color: rgba(206, 212, 212, 0.6);
+}
+.hidepagetitle{
+    text-align: center;
+}
+.paragraph{
+    background-color:rgba(213, 195, 195, 0.9) ;
+    position: relative;
+    top:10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+}
+.paragraph1{
+    display: flex;
+    position: relative;
+    height: 30%;
+}
+.paragraph2{
+    display: flex;
+    position: relative;
+    height: 30%;
+}
+.paragraph3{
+    display: flex;
+    position: relative;
+    height: 30%;
+}
+.hideContent1{
+    width: 60%;
+    margin: 10px;
+}
+.hideImg1{
+    width: 35%;
+    margin: 10px;
+    background-size: contain;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+  
+}
+.hideContent2{
+    width: 60%;
+    margin: 10px;
+}
+.hideImg2{
+    width: 35%;
+    margin: 10px;
+    background-size: contain;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+}
+.hideContent3{
+    width: 60%;
+    margin: 10px;
+}
+.hideImg3{
+    width: 35%;
+    margin: 10px;
+    background-size: contain;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+}
+#boxchange{
+    background-image: url("https://cdn.pixabay.com/photo/2012/11/28/08/54/milky-way-67504_960_720.jpg");
+    color: aliceblue;
+    font-size: 16px;
+    position: absolute;
+    top: 110%;
+    left: 100px;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 10px;
+    display: none;  
+}
+#boxchangemini{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#inputboxchange{
+    background-image: url("https://cdn.pixabay.com/photo/2012/11/28/08/54/milky-way-67504_960_720.jpg");
+    position: absolute;
+    left: 700px;
+    width: 400px;
+    border-radius: 10px;
+}
+#inputboxadd{
+    background-image: url("https://cdn.pixabay.com/photo/2012/11/28/08/54/milky-way-67504_960_720.jpg");
+    position: absolute;
+    left: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+.buttonSubmit1, .buttonSubmit2{
+    width: 80px;
+    height: 50px;
+    font-size: 15px;
+}
+.changeNamePlanets, .changeContentPlanets,.changeBackgroundPlanets{
+    margin: 10px;
+}
+.addNamePlanets, .addContentPlanets,.addBackgroundPlanets{
+    margin: 10px;
+}
+
+
+
+
+
