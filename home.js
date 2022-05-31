@@ -47,13 +47,13 @@ let overView = ["The Solar System is the gravitationally bound system of the Sun
 "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.",
 "Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.",
 "Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope.",]
+//change background
 let namePlanet = ["SolarSystem","Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"]
 var count = 0;
 let bgImage = document.querySelector("#container");
-//change background
 let changeimg = function changeReview(){
     var functionreadmore="";
-    functionreadmore+=`<button class = "readmore1" onclick= show${namePlanet[count]}Info()>Read More</button>`
+    functionreadmore+=`<button class = "readmore1" onclick= show${slides[count].name}Info()>Read More</button>`
     document.querySelector(".readmore").innerHTML = functionreadmore;
     document.querySelector(".introduce").innerText = overView[count];
     document.querySelector(".destination").innerText = destination;
@@ -410,6 +410,8 @@ let backgroundChange = document.querySelector(".addBackgroundPlanets");
 let addbutton = "";
 let chosepagebasic = document.querySelector("#chosepage")
 function submit1(){
+    var storageKey = "namePlanet";
+localStorage.setItem(storageKey,namePlanet)
     let i= namePlanet.length+1;
         addbutton += `<button class="page0" style="border: 1px solid white; width: 10px; cursor: pointer; height: 10px; margin: 3px;border-radius: 5px ; " onclick="page${i}(){}"></button>`
     chosepagebasic.innerHTML+=addbutton;
@@ -443,6 +445,23 @@ function loginbyid(){
         document.querySelector(".loginbutton").src = "https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_960_720.png"
     } else {
         alert("Who are you?")
+    }
+}
+//local
+//change content
+function submit2(){
+    let valueofselect = document.querySelector(".choseplanets").value;
+    if (document.querySelector(".changeBackgroundPlanets").value == ""|| document.querySelector(".changeContentPlanets").value =="") {
+        alert("Vui lòng nhập dữ liệu thay đổi")
+    } else {
+        for (let namepl  in namePlanet){
+            if(namePlanet[namepl] == valueofselect){
+                backgroundimg[namepl] = document.querySelector(".changeBackgroundPlanets").value;
+                overView[namepl] = document.querySelector(".changeContentPlanets").value;
+                alert("Đã cập nhật content over view");
+                document.querySelector(".changeContentPlanets").value = ""
+            }
+    } 
     }
 }
 
