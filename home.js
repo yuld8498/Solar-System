@@ -444,7 +444,7 @@ function loginbyid(){
         tablelogout = `<button onclick='logouttable()'>Log Out<button>`
         document.querySelector(".loginbutton1").innerHTML = tablelogout;
         document.querySelector("#boxchange").style.display = "block";
-        document.querySelector(".loginbutton").src = "https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_960_720.png"
+        document.querySelector(".loginbutton").src = ""
     } else {
         alert("Who are you?")
     }
