@@ -1,6 +1,8 @@
 //variables of page contents
 let solarsystemImg =[];
-let solarSystemParagraph = [];
+let solarSystemParagraph = ["The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud.",
+"The vast majority (99.86%) of the system's mass is in the Sun, with most of the remaining mass contained in the planet Jupiter. The four inner system planets—Mercury, Venus, Earth and Mars—are terrestrial planets, being composed primarily of rock and metal. The four giant planets of the outer system are substantially larger and more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the next two, Uranus and Neptune, are ice giants, being composed mostly of volatile substances with relatively high melting points compared with hydrogen and helium, such as water, ammonia, and methane.",
+"All eight planets have nearly circular orbits that lie near the plane of Earth's orbit, called the ecliptic."];
 let mercuryImg=[ "mercury1.jpg","mercury2.jpg","mercury3.jpg"] ;
 let mercuryParagraph = ["The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.",
 "From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system.",
@@ -66,7 +68,7 @@ let changeimg = function changeReview(){
         count=0;
     }
 }
-setInterval(changeimg,2*1000)
+setInterval(changeimg,5*1000)
 //select system
 let system_list = ["Out Solar System","Sun","Kuiper Belt","Oort Cloud"]
 function ShowSystemList(){
