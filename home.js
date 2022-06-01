@@ -53,7 +53,7 @@ var count = 0;
 let bgImage = document.querySelector("#container");
 let changeimg = function changeReview(){
     var functionreadmore="";
-    functionreadmore+=`<button class = "readmore1" onclick= show${nameChange[count]}Info()>Read More</button>`
+    functionreadmore+=`<button class = "readmore1" onclick= show${namePlanet[count]}Info()>Read More</button>`
     document.querySelector(".readmore").innerHTML = functionreadmore;
     document.querySelector(".introduce").innerText = overView[count];
     document.querySelector(".destination").innerText = destination;
